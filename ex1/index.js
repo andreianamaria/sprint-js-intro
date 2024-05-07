@@ -1,15 +1,6 @@
-const checkNum = function (n) {
-  if (n % 10 === 0) {
-    return true;
-  }
-  else {
-    return false;
-  }
+const checkNum = (n) => { return n%10 === 0; }
+const display = (n) => {
+  checkNum(n) ? console.log(`Felicitari, numarul ${x} este divizbil cu 10`) : console.log(`Numarul ${x} nu este divizibil cu 10`);
 }
 let x = 22;
-if (checkNum(x)) {
-  console.log(`Felicitari, numarul ${x} este divizbil cu 10`);
-}
-else {
-  console.log(`Numarul ${x} nu este divizibil cu 10`);
-}
+display(x);
